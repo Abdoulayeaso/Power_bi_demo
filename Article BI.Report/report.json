@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "5ef38ec7f243f3714afd",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"761c2263f453b7a0b234\",\"layouts\":[{\"id\":0,\"position\":{\"x\":628.4755188529122,\"y\":0,\"z\":2000,\"width\":607.8922595018342,\"height\":385.5930585101928,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Tableau1.Article\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Tableau1.Prix TTC)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Achats\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Article\"},\"Name\":\"Tableau1.Article\",\"NativeReferenceName\":\"Article\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Prix TTC\"}},\"Function\":0},\"Name\":\"Sum(Tableau1.Prix TTC)\",\"NativeReferenceName\":\"Somme de Prix TTC\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Prix TTC\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"-1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tendance'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"cad0b1e149aa65d9680a\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Achats\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Article\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Total'\"}}],[{\"Literal\":{\"Value\":\"'HT'\"}}],[{\"Literal\":{\"Value\":\"'TVA'\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'TVA'\"}}}}}],\"valueMap\":{\"0\":\"TVA\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'HT'\"}}}}}],\"valueMap\":{\"0\":\"HT\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'Total'\"}}}}}],\"valueMap\":{\"0\":\"Total\"}}]}}]",
+          "height": 385.59,
+          "width": 607.89,
+          "x": 628.48,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ad3db26dbf2b81ae511b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":607.8922595018342,\"height\":385.5930585101928,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Tableau1.Article\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Tableau1.Prix TTC)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Achats\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Article\"},\"Name\":\"Tableau1.Article\",\"NativeReferenceName\":\"Article\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Prix TTC\"}},\"Function\":0},\"Name\":\"Sum(Tableau1.Prix TTC)\",\"NativeReferenceName\":\"Somme de Prix TTC\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Prix TTC\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Prix par article'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"9e14f6e6fde44bf3695b\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Achats\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Article\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Total'\"}}],[{\"Literal\":{\"Value\":\"'HT'\"}}],[{\"Literal\":{\"Value\":\"'TVA'\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'TVA'\"}}}}}],\"valueMap\":{\"0\":\"TVA\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'HT'\"}}}}}],\"valueMap\":{\"0\":\"HT\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tableau1\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'Total'\"}}}}}],\"valueMap\":{\"0\":\"Total\"}}]}}]",
+          "height": 385.59,
+          "width": 607.89,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c2746409bdc0064c36b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":396.57079683076773,\"z\":1000,\"width\":1226.7622573242434,\"height\":323.8432804569591,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Tableau1.Article\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Tableau1.Prix TTC)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Achats\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Article\"},\"Name\":\"Tableau1.Article\",\"NativeReferenceName\":\"Article\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Prix TTC\"}},\"Function\":0},\"Name\":\"Sum(Tableau1.Prix TTC)\",\"NativeReferenceName\":\"Somme de Prix TTC\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Prix TTC\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Répartition'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"7b29310536e3cea2ef1c\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Achats\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Article\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Total'\"}}],[{\"Literal\":{\"Value\":\"'HT'\"}}],[{\"Literal\":{\"Value\":\"'TVA'\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Achats\"}},\"Property\":\"Article\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Achats\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'TVA'\"}}}}}],\"valueMap\":{\"0\":\"TVA\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Achats\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'HT'\"}}}}}],\"valueMap\":{\"0\":\"HT\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Achats\"}},\"Property\":\"Article\"}},\"Right\":{\"Literal\":{\"Value\":\"'Total'\"}}}}}],\"valueMap\":{\"0\":\"Total\"}}]}}]",
+          "height": 323.84,
+          "width": 1226.76,
+          "x": 9.61,
+          "y": 396.57,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

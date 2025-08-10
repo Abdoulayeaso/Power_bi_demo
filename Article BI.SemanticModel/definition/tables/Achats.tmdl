@@ -1,0 +1,35 @@
+table Achats
+	lineageTag: 15bc7ac9-96fc-4b67-83f8-a01309a53f41
+
+	column Article
+		dataType: string
+		lineageTag: ad1f8334-1675-4748-b1c1-51d9ac6b29b8
+		summarizeBy: none
+		sourceColumn: Article
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prix TTC'
+		dataType: double
+		lineageTag: 80beabb7-48f5-48f2-a8f9-fe89b165b583
+		summarizeBy: sum
+		sourceColumn: Prix TTC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Achats = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\SOUMAH\Documents\Doc ASO\BI-SERVICE-ASO\3-Factures achats\agefiph\Achats.xlsx"), null, true),
+				    Tableau1_Table = Source{[Item="Tableau1",Kind="Table"]}[Data],
+				    #"Type modifié" = Table.TransformColumnTypes(Tableau1_Table,{{"Article", type text}, {"Prix TTC", type number}})
+				in
+				    #"Type modifié"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
